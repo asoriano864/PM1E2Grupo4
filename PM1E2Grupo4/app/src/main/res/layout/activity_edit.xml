@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityEdit">
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="128dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="138dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/imgFoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="145dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="133dp"
+                android:layout_marginEnd="133dp"
+                android:layout_marginBottom="9dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnActualizarFoto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logo"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <Button
+                android:id="@+id/btnActualizarFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginBottom="33dp"
+                android:backgroundTint="#2B8A1B"
+                android:text="Actualizar Fotografía"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
+
+            <TextView
+                android:id="@+id/lblNombre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginBottom="9dp"
+                android:text="Nombre:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtNombreContacto2"
+                android:layout_width="317dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Ingrese el nombre del contacto"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/label2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label" />
+
+            <TextView
+                android:id="@+id/lblTelefono2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-5dp"
+                android:layout_marginBottom="9dp"
+                android:text="Teléfono:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtTelefonoContacto2"
+                android:layout_width="317dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Ingrese el teléfono del contacto"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/label2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label" />
+
+            <TextView
+                android:id="@+id/lblLongitud2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="9dp"
+                android:text="Longitud:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtLongitudContacto2"
+                android:layout_width="246dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/label2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label" />
+
+            <TextView
+                android:id="@+id/lblLatitud2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="9dp"
+                android:text="Latitud:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtLatitudContacto2"
+                android:layout_width="246dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:background="@null"
+                app:layout_constraintBottom_toTopOf="@+id/label2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/label" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#2B8A1B"
+                android:text="Actualizar"
+                app:layout_constraintBottom_toTopOf="@+id/btnListarContactos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLongitud" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="-50dp"
+                android:backgroundTint="#C81D11"
+                android:text="Eliminar"
+                app:layout_constraintBottom_toTopOf="@+id/btnListarContactos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLongitud" />
+
+            <Button
+                android:id="@+id/btnVolver2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="#2778CD"
+                android:text="Volver"
+                app:layout_constraintBottom_toTopOf="@+id/btnListarContactos"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtLongitud" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

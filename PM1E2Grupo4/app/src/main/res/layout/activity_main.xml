@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnListarContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#2778CD"
+        android:text="Contactos Salvados"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSalvar" />
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="33dp"
+        android:backgroundTint="#2B8A1B"
+        android:text="Tomar Fotografía"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFoto" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="117dp"
+        android:backgroundTint="#2B8A1B"
+        android:text="Salvar Contacto"
+        app:layout_constraintBottom_toTopOf="@+id/btnListarContactos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLongitud" />
+
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="23dp"
+        android:text="Latitud:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/label6"
+        app:layout_constraintEnd_toStartOf="@+id/txtLatitud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefonoContacto" />
+
+    <TextView
+        android:id="@+id/txtLongitud"
+        android:layout_width="246dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/btnSalvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label6"
+        app:layout_constraintTop_toBottomOf="@+id/txtLatitud" />
+
+    <TextView
+        android:id="@+id/label6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="87dp"
+        android:text="Longitud:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/btnListarContactos"
+        app:layout_constraintEnd_toStartOf="@+id/txtLongitud"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label5" />
+
+    <EditText
+        android:id="@+id/txtTelefonoContacto"
+        android:layout_width="317dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Ingrese el teléfono del contacto"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/label5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label2" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="303dp"
+        android:layout_marginBottom="12dp"
+        android:text="Teléfono:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/txtTelefonoContacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreContacto" />
+
+    <EditText
+        android:id="@+id/txtNombreContacto"
+        android:layout_width="317dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Ingrese el nombre del contacto"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/label2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/txtLatitud"
+        android:layout_width="248dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/txtLongitud"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/label5"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelefonoContacto" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="145dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnTomarFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="306dp"
+        android:layout_marginEnd="308dp"
+        android:layout_marginBottom="9dp"
+        android:text="Nombre:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreContacto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
